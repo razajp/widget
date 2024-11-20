@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download My Widget</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            width: 100vw;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #005bb5;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .features {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .feature {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            width: 100vw;
+            font-size: 0.95vw;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .features, .testimonials {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .features, .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Get the Ultimate Widget Now!</h1>
+        <p>Download our amazing desktop widget styled like a macOS widget, complete with a glass effect.</p>
+        <a href="MyWidgetInstaller.exe" class="cta-button" download>Download Now</a>
+    </header>
+
+    <div class="section features">
+        <div class="feature">
+            <h3>Glass Effect Design</h3>
+            <p>Our widget features a sleek, modern glass effect that fits perfectly with your desktop environment.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Updates</h3>
+            <p>Stay up to date with real-time clock, date, and day information displayed directly on your screen.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Spark Pair | Created By: Spark Pair | +923165825495 | sparkpair15@gmail.com</p>
+    </footer>
+
+</body>
+</html>
